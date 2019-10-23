@@ -1,43 +1,62 @@
 //Back-end
 
-var body = $("input#body").val();
-var curse = $("input:radio[name=curse]:checked").val()
-var color = $("input#color"). val();
-var born = $("input#born").val();
-var firstName = $("input#firstName").val();
-var lastName = $("input#lastName").val();
-var streetAddress = $("input#streetAddress").val();
-var aptNum = $("input#aptNum").val();
-var city = $("input#city").val();
-var state = $("input#state").val();
-var zip = $("input#zip").val();
 
 
 
 //User Interface
 
 $(document).ready(function(){
+  var flesh;
+  var curse;
+  var color;
+  var born;
+  var firstName;
+  var lastName;
+  var streetAddress;
+  var aptNum;
+  var city ;
+  var state;
+  var zip;
+
+
+
   $("form#first").submit(function(event) {
   event.preventDefault();
-  $(".body").text(body);
+  flesh = $("select#flesh").val();
+  curse = $("input:radio[name=curse]:checked").val()
+  color = $("input#color"). val();
+  born = $("input#born").val();
+  $(".flesh").text(flesh);
   $(".curse").text(curse);
   $(".color").text(color);
   $(".born").text(born);
-
   $("#form2").show();
 
 
 }); //First Form
-$("form#second").submit(function(event) {
-      event.preventDefault();
+
+
+$("#second").submit(function(event) {
+  console.log("first");
+  event.preventDefault();
+  firstName = $("input#firstName").val();
+  lastName = $("input#lastName").val();
+  streetAddress = $("input#streetAddress").val();
+  aptNum = $("input#aptNum").val();
+  city = $("input#city").val();
+  state = $("input#state").val();
+  zip = $("input#zip").val();
   $(".firstName").text(firstName);
   $(".lastName").text(lastName);
+  console.log("second");
   $(".streetAddress").text(streetAddress);
   $(".aptNum").text(aptNum);
   $(".city").text(city);
   $(".state").text(state);
+  console.log("second`");
   $(".zip").text(zip);
 
   $("#receipt").show();
+  console.log("third");
 });
 });

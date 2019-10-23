@@ -13,12 +13,12 @@
   <body>
     <div class="container">
       <h1>Welcome to the Corpse Reclamation Station!</h1>
-      <form id=first>
+      <form id="first">
 
         <div class="form-group">
           <label for=""></label>
-          <select class="form-control" id="body">
-            <option>Goldfish</option>
+          <select class="form-control" id="flesh">
+            <option value="Goldfish">Goldfish</option>
             <option>Rocking Chair</option>
             <option>Dinosaur</option>
             <option>Red Panda</option>
@@ -29,40 +29,33 @@
 
         <div class="radio">
           <label for="">
-            <input type="radio" name="curse" value="option1" id="optionsCurse1">
+            <input type="radio" name="curse" value="Frog" id="optionsCurse1">
             Frog
           </label>
         </div>
         <div class="radio">
           <label for="">
-            <input type="radio" name="curse" value="option12" id="optionsCurse12">
+            <input type="radio" name="curse" value="Karma" id="optionsCurse12">
             Karma
           </label>
         </div>
         <div class="radio">
           <label for="">
-            <input type="radio" name="curse" value="option3" id="optionsCurse3">
+            <input type="radio" name="curse" value="Allery to Magic Bee" id="optionsCurse3">
             Allergic to Magic Bee
           </label>
         </div>
         <div class="radio">
           <label for="">
-            <input type="radio" name="curse" value="option4" id="optionsCurse4">
+            <input type="radio" name="curse" value="Wearing Yellow During Hailstorm" id="optionsCurse4">
             Wore Yellow During a Hailstorm
           </label>
         </div>
-
-
-
-
-
         <div class="form-group">
           <label for="color">Desired eye color *</label>
           <input id="color" class="form-control" type="color">
           <span class="help-block">* Eye color not guaranteed to match, may vary based on region eyes were harvested from.</span>
         </div>
-
-
         <div class="form-group">
           <label for="born">When do you need to be human?</label>
           <input id="born" class="form-control" type="date">
@@ -82,9 +75,7 @@
           <label for="lastName">Last Name</label>
           <input type="text" class="form-control" id="lastName">
         </div>
-        </form>
-        <form class="form-inline">
-          <div class="form-group">
+        <div class="form-group">
             <label for="streetAddress">Street Adress</label>
             <input type="text" class="form-control" id="streetAddress">
           </div>
@@ -130,7 +121,7 @@
         <p>To make sure we embody the essence of you please make sure all items listed are correct</p>
         <ul>
           <li>My name is: <span class="firstName"></span> <span class="lastName"></span></li>
-          <li>I'm currently a: <span class="body"></span></li>
+          <li>I'm currently a: <span class="flesh"></span></li>
           <li>I was transformed from: <span class="curse"></span></li>
           <li>I would like my eyes to be: <span class="color"></span> color</li>
           <li>I need my body by: <span class="born"></span></li>
