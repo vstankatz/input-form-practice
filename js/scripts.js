@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
 $("#second").submit(function(event) {
-  console.log("first");
+
   event.preventDefault();
   firstName = $("input#firstName").val();
   lastName = $("input#lastName").val();
@@ -48,15 +48,15 @@ $("#second").submit(function(event) {
   zip = $("input#zip").val();
   $(".firstName").text(firstName);
   $(".lastName").text(lastName);
-  console.log("second");
+
   $(".streetAddress").text(streetAddress);
   $(".aptNum").text(aptNum);
   $(".city").text(city);
   $(".state").text(state);
-  console.log("second`");
+//  console.log("second`");
   $(".zip").text(zip);
 
-  $("#receipt").show();
-  console.log("third");
+  $(".receipt").show();
+  //console.log("third");
 });
 });
